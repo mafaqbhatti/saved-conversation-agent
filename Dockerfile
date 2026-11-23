@@ -5,4 +5,4 @@ RUN python -m pip install --no-cache-dir . && useradd --uid 10001 --create-home 
 USER app
 ENV AGENT_WEB_HOST=0.0.0.0
 EXPOSE 8080
-ENTRYPOINT ["python","-m","persistent_conversation_agent"]
+ENTRYPOINT ["python","-m","saved_conversation_agent"]
